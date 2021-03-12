@@ -8,8 +8,9 @@ const Cancion = require('../models/canciones.model');
 router.post('/registrar-cancion', (req, res) => {
     let cancion = new Cancion({
         nombre: req.body.nombre,
-        disquera: req.body.disquera,
-        fecha_nac: req.body.fecha_nac,
+        duracion: req.body.duracion,
+        artista: req.body.artista,
+        album: req.body.album,
     });
     cancion.save((err, cancion_db) => {
         if (err) {
@@ -58,8 +59,9 @@ router.put('/modificar-canciones', (req, res) => {
     canciones.updateOne({ _id: req.body._id }, {
         $set: {
             nombre: req.body.nombre,
-            disquera: req.body.disquera,
-            fecha_nac: req.body.fecha_nac
+            duracion: req.body.duracion,
+            artista: req.body.artista,
+            album: req.body.album,
         }
     }, (err, info) => {
         if (err) {
