@@ -5,7 +5,7 @@ const router = express.Router();
 const Cancion = require('../models/canciones.model');
 
 
-router.post('/registrar-cancion', (req, res) => {
+router.post('/registrar-cancion-nueva', (req, res) => {
     let cancion = new Cancion({
         nombre: req.body.nombre,
         duracion: req.body.duracion,
@@ -35,7 +35,7 @@ router.get('/listar-canciones', (req, res) => {
             });
         } else {
             res.json({
-                lista_canciones
+                listar_canciones
             });
         }
     });
