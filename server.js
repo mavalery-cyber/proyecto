@@ -55,3 +55,4 @@ function handleError(res, reason, message, code) {
 // Conexión a todas la rutas.
 app.use('/api', require('./routes/artista.route'));
 app.use('/api', require('./routes/cancion.route'));
+app.use('/api', require('./routes/album.route'));
