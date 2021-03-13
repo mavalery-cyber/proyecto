@@ -8,7 +8,7 @@ router.post('/registrar-usuario', (req, res) => {
     let body = req.body;
     let nuevo_usuario = new Usuario({
         nombre: body.nombre,
-        nacimiento: body.fecha_nac,
+        fecha_nac: body.fecha_nac,
         correo: body.correo,
         genero: body.genero,
         contrasena: body.contrasena,
