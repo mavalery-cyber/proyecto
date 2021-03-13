@@ -12,7 +12,7 @@ router.post('/registrar-usuario', (req, res) => {
         correo: body.correo,
         genero: body.genero,
         contrasena: body.contrasena,
-        conf_contra: body.conf_contra,
+        tipo: body.tipo,
         estado: 'activo'
 
     });

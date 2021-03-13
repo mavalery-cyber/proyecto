@@ -8,7 +8,7 @@ const schema_usuario = mongoose.Schema({
     correo: { type: String, required: true },
     genero: { type: String, required: true },
     contrasena: { type: String, required: true },
-    conf_contra: { type: String, required: true },
+    tipo: { type: String, required: true },
 });
 
-module.exports = mongoose.model('Cancion', schema_cancion, 'canciones');
+module.exports = mongoose.model('Usuario', schema_usuario, 'usuario');
