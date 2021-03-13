@@ -56,3 +56,4 @@ function handleError(res, reason, message, code) {
 app.use('/api', require('./routes/artista.route'));
 app.use('/api', require('./routes/cancion.route'));
 app.use('/api', require('./routes/album.route'));
+app.use('/api', require('./routes/usuario.route'));
