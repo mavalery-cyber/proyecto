@@ -2,6 +2,8 @@
 
 const mongoose = require('mongoose');
 
+
+
 const schema_usuario = mongoose.Schema({
     nombre: { type: String, required: true },
     fecha_nac: { type: String, required: true },
